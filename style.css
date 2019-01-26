@@ -1,10 +1,26 @@
 body{
   background-color: black;
   align-items: center;
+  color: seashell;
+  font-family: Helvetica;
+  opacity:0.9;
+  text-align: center;
+  
+}
+
+h2{
+  font-size: 30px;
+}
+
+h4{
+  font-size: 24px;
+}
+
+div{
+  border: 1px solid white;
 }
 
 /*Header*/
-
 header{
   display: flex;
   align-items: center;
@@ -14,16 +30,27 @@ header{
   height: 69px;
   border-bottom:1px solid seashell;
   background-color: black;
-  font-family: Helvetica;
-  font-size: 22px;
-  text-align: right;
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.logo-nav{
+  display: flex;
+  align-items: center;
+  position:fixed;
+  background-color: black;
+  width: 100%;
+  height: 50px;
+
+
 }
 
 .logo{
   display: flex;
-  align-items: center;
   flex-grow: 1;
   padding-left: 10px;
+
   }
 
 .logo img {
@@ -32,14 +59,39 @@ header{
   margin-right: 12px;
 }
 
-header nav a{
+.logo-nav nav a{
   padding-right: 20px;
   color: WhiteSmoke;
+
+
+
+
 }
 
-.background.image-content{
-  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg);
+/*Body*/
+
+.background{
+  display: flex;
+  position: relative;
+  z-index: -1;
   margin: 0 auto;
   height: 700px;
   width:1200px;
+}
+
+.topbg{
+  display: block;
+  position: absolute;
+  top: 42%;
+}
+
+
+.h2andh4{
+  display: block;
+  width: 100%;
+  font-size: 40px;
+  background-color: black;
+  ;
+
+
 }
